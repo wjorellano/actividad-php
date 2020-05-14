@@ -7,12 +7,11 @@
   $examen = $_POST['examen_final'];
   $trabajo = $_POST['trabajo_final'];
 
-  $notas = ($nota1 + $nota2 + $nota3 * 35)/100;
-  $examenFinal = ($examen * 35)/100;
-  $trabajoFinal = ($trabajo * 35)/100;
+  $notas = ($nota1 + $nota2 + $nota3)/3;
+  $resultado = ($notas*0.35) + ($examen*0.35) + ($trabajo*0.3);
+
 
   echo "Estudiante: ".$nombre."<br>";
-  $resultado = $notas + $examenFinal + $trabajoFinal;
     echo "Nota: ".$resultado."<br>";
   if ($resultado < 2.9) {
     echo "El estudiande desaprobo el Periodo";

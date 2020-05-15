@@ -13,7 +13,7 @@
 
   echo "Estudiante: ".$nombre."<br>";
     echo "Nota: ".$resultado."<br>";
-  if ($resultado < 2.9) {
+  if ($resultado < 6) {
     echo "El estudiande desaprobo el Periodo";
   }else{
     echo "El estudiande aprobo el Periodo";
